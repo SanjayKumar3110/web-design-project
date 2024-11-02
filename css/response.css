@@ -1,0 +1,86 @@
+@media(max-width:1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container{
+        gap: 3rem;
+        border: none;
+    }
+    .skill-info{
+        flex-direction: column;
+    }
+}
+@media(max-width: 768px){
+    header{
+        gap: 1rem;
+        padding: 1rem 5rem ;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .visit-btn{
+        display: none;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .grid{
+        grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+    }
+}
+@media screen and (max-width: 600px) {
+    header #menu-icon{
+        display: block;
+        position: relative;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1em;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 3em;
+        display: none;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    header{
+        gap: 1rem;
+        padding: 1rem 4rem;
+        left: 11.5rem;
+    }
+    header .logo{
+        font-size: 1.5rem;
+    }
+    /* About section */
+    .about{
+        padding: 1rem 1rem;
+    }
+    .about-container img{
+        width: 70vw;
+    }
+    .about-container .typewriter{
+        font-size: 1.5rem;
+    }
+    .about-container .typewriter .typewriter-text{
+        font-size: 1.6rem;
+    }
+    /* skill section*/
+    
+    .project-card img{
+        width:52vw;
+        border-radius: 1rem;
+    }
+   
+}
